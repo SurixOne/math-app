@@ -1,38 +1,27 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  background: darkviolet;
+  background-image: url(https://img.freepik.com/free-photo/binary-data-background-blue-color-tone_163855-67.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.operations-container,
+.input-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.input-container {
+  padding-top: 30px;
+  height: calc(20vh - 30px);
+  position: relative;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.operations-container {
+  margin: auto;
+  width: fit-content;
+  height: 80vh;
 }
